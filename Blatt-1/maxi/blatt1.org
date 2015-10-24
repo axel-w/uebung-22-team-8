@@ -1,0 +1,77 @@
+#+TITLE: Aufgabenblatt 1
+#+AUTHOR: Team X
+#+OPTIONS: toc:nil date:nil
+#+LaTeX_HEADER:\usepackage[margin=3cm]{geometry}
+#+LaTeX_HEADER:\usepackage{setspace}
+
+* Aufgabe 1
+** Welchem Zweck dient der Compiler?
+Der Compiler übersetzt den von Menschen
+lesbaren Quellcode in maschinenlesbaren Maschinencode (Nullen und Einsen).
+Die Einstellung des Compilers definiert damit auch den Syntax, der im
+Quellcode benutzt werden darf.
+
+** Was bewirkt die Verwendung der Zeichenfolge \" in der Formatzeichenkette von =printf=?
+Diese Zeichenfolge bewirkt die Ausgebung des Sonderzeichens ~"~ an der
+angegebenen Position in der Formatzeichenkette. Der Backslash wird /nicht/
+mit ausgegeben.
+** Was bewirkt die Formatangabe =%4d= in der Formatzeichenkette von printf?
+** Was bewirkt die Formatangabe =%4d= in der Formatzeichenkette von printf?
+** Was bewirkt die Formatangabe =%.3f= in der Formatzeichenkette von printf?
+** Was ist der Unterschied zwischen einer Fließkommazahl vom Typ float und einer Fließ- kommazahl vom Typ double?
+** Sind alle Fließkommazahlen exakt darstellbar?
+** Welche Werte kann eine Variable vom Typ long annehmen?
+** Nennen Sie fünf Standard-Definitionsdateien (Endung .h) der C-Standard-Bibliothek.
+** Für welchen Datentyp wird das Formatzeichen =%lf= in scanf verwendet?
+** Welche Umwandlung bewirkt die Verwendung der Formatangabe =%e= in der Formatzeichen- kette von printf?
+** Mit welcher Funktion aus der Header-Datei ctype.h kann man überprüfen, ob es sich bei einem Zeichen um eine Ziffer handelt?
+# (der komplette Kopf der Funktion ist anzugeben)
+** Welchen Dezimalwert hat das Zeichen a in der ASCII-Tabelle?
+
+* Aufgabe 2
+** Originalprogramm
+#+begin_example
+  1: %includes [stout.h]
+  2:
+  3: init maine[]
+  4: (
+  5:  init i:1 r:O,
+  6:  println[’%% Informatik %I %%’ i],
+  7:  returns r,
+  8: )
+#+end_src
+** Fehler
+*** Zeile 1
+- Das Prozent-Symbol (=%=) müsste ein Hash-Symbol (=#=) sein.
+- Das =s= am ende von =includes= muss weg.
+- Die Eckigen Klammern =[]= um =stout.h= müssten spitze Klammern sein (=<>=).
+- =stout.h= ist falsch geschrieben. Es müsste =stdout.h= heißen (das =d= fehlt).
+- Verbesserte Zeile: =#include<stdout.h>=
+*** Zeile 3
+- =init= ist falsch geschrieben. Richtig wäre an dieser Stelle die Nennung des
+  Datentyps =int=.
+- =maine= ist falsch geschrieben. Es müsste =main= heißen
+- Die eckigen Klammern sind hier fehlerhaft. Es müssten runde Klammern =()= sein.
+- Verbesserte Zeile: =int main()=
+*** Zeile 4
+- Die Runde Klammer müsste eine geschweifte Klammer sein ={=
+- Verbesserte Zeile: ={=
+*** Zeile 5
+- =init= ist falsch geschrieben. Es müsste an dieser Stelle der Datentyp =int=
+  genannt werden.
+- Die Doppelpunkte bei der Variablendeklaration müssten Gleichheitszeichen sein
+- Es fehlt ein Komma zwischen der Variablendeklaration von ~i~ und ~r~
+- Das Komma am Ende der Zeile muss durch ein Semikolon ersetzt werden ~;~
+- Verbesserte Zeile: ~int i=1, r=0;~
+*** Zeile 6
+
+** Verbessertes Programm
+#+begin_src C :tangle ex1.c
+  #include<stdio.h>
+  int main()
+  {
+    int i=1, r=O;
+    println("%%%% Informatik %i %%%%", i);
+    return r;
+  }
+#+end_src

@@ -1,0 +1,10 @@
+# Tex files
+*.pyg
+*.tex
+
+# Binary files
+*.o
+
+# Binary directories
+bin/
+*/bin/
