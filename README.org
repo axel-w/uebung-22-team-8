@@ -54,3 +54,5 @@ Hier ein paar Links zum ansehen und lernen:
 ** Offizielle Seiten
 - Github: [[https://github.com]]
 - Git: https://git-scm.com
+** Programme
+- Github Desktop, *EMPFOHLEN!*: [[https://desktop.github.com]]
