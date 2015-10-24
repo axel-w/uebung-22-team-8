@@ -6,7 +6,7 @@
 
 * Ziel
 Ziel dieses Github Repos ist es, uns die Zusammenarbeit an den Übungsaufgaben zu
-erleichtern und flexibles und schnelles gegenseitiges Feedback zu machen.
+erleichtern und flexibles und schnelles gegenseitiges Feedback zu ermöglichen.
 
 Idealerweise müssen wir uns dann nur einmal bis keinmal pro Übungsblatt treffen
 und können trotzdem eine gute Arbeit abgeben.
@@ -15,23 +15,23 @@ und können trotzdem eine gute Arbeit abgeben.
 Ich schlage für den Anfang folgenden Aufbau vor:
 #+begin_example
 |- Blatt 1
- |- Axel
-  |- datei_1.c
-  |- datei_2.c
-  |- ...
- |- Martin
-  |- datei.c
-  |- ...
- |- Maxi
-  |- ...
+  |- Axel
+    |- datei_1.c
+    |- datei_2.c
+    |- ...
+  |- Martin
+    |- datei.c
+    |- ...
+  |- Maxi
+    |- ...
 |- Blatt 2
- |- Axel
- |- ...
+  |- Axel
+  |- ...
 |- Blatt [N]...
 #+end_example
 
 Durch die Flexibilität und die vielen Features von Git wäre es auch möglich pro
-Übungsblatt nur eine Datei gemeinsam zu bearbeiten, aber Ich denke wir sollten
+Übungsblatt nur eine Datei gemeinsam zu bearbeiten, aber ich denke wir sollten
 hier einfach dem Rat des Übungsleiters folgen und jeder sollte die Übungsblätter
 erst komplett selbst bearbeiten.
 
@@ -40,12 +40,12 @@ herauskristallisieren (oder uns zur Not auch einfach treffen / Skype Call etc.)
 und ebenfalls hier hochladen.
 
 * Git / Github...
-Ich weiß natürlich nicht in wie weit ihr mit Git/Github vertraut seid. Vielleicht habt ihr
-auch keine Lust noch zusätzlich was Neues zu lernen, aber die Vorteile sind
-Immens - nicht nur jetzt, sondern auch später, da Git ein Standard in vielen
-Unternehmen ist.
+Ich weiß natürlich nicht in wie weit ihr mit Git/Github vertraut seid. \\
+Vielleicht habt ihr auch keine Lust noch zusätzlich was Neues zu lernen, aber
+die Vorteile sind immens - nicht nur jetzt, sondern auch später, da Git ein
+Standard in vielen Unternehmen ist.
 
-Hier ein paar Links zum ansehen und lernen
+Hier ein paar Links zum ansehen und lernen:
 
 ** Tutorials:
 - Deutsch, nur Text: [[https://rogerdudler.github.io/git-guide/index.de.html]]
