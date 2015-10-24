@@ -39,23 +39,23 @@ mit ausgegeben.
   6:  println[’%% Informatik %I %%’ i],
   7:  returns r,
   8: )
-#+end_src
+#+end_example
 ** Fehler
 *** Zeile 1
 - Das Prozent-Symbol (=%=) müsste ein Hash-Symbol (=#=) sein.
 - Das =s= am ende von =includes= muss weg.
 - Die Eckigen Klammern =[]= um =stout.h= müssten spitze Klammern sein (=<>=).
 - =stout.h= ist falsch geschrieben. Es müsste =stdout.h= heißen (das =d= fehlt).
-- Verbesserte Zeile: =#include<stdout.h>=
+- Verbesserte Zeile: ~#include<stdout.h>~
 *** Zeile 3
 - =init= ist falsch geschrieben. Richtig wäre an dieser Stelle die Nennung des
   Datentyps =int=.
 - =maine= ist falsch geschrieben. Es müsste =main= heißen
 - Die eckigen Klammern sind hier fehlerhaft. Es müssten runde Klammern =()= sein.
-- Verbesserte Zeile: =int main()=
+- Verbesserte Zeile: ~int main()~
 *** Zeile 4
 - Die Runde Klammer müsste eine geschweifte Klammer sein ={=
-- Verbesserte Zeile: ={=
+- Verbesserte Zeile: ~{~
 *** Zeile 5
 - =init= ist falsch geschrieben. Es müsste an dieser Stelle der Datentyp =int=
   genannt werden.
